@@ -1,0 +1,430 @@
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 0.9em; /* Slightly smaller font size for smaller screens */
+    }
+
+    .container {
+        width: 95%; /* Reduce container width for smaller screens */
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2em; /* Reduce font size for the hero title */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjust font size for the hero subtitle */
+    }
+
+    /* Navbar */
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        gap: 1em; /* Add spacing between items */
+    }
+
+    .navbar a {
+        font-size: 1.2em; /* Adjust font size for navbar links */
+    }
+
+    /* About Section */
+    .about-content {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .about-text {
+        flex: 1 1 auto; /* Adjust flex properties */
+    }
+
+    .about-image {
+        margin-top: 1em; /* Add spacing between text and image */
+    }
+
+    .about-image img {
+        width: 200px; /* Reduce image size */
+        height: 200px;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr; /* Display skills in a single column */
+    }
+
+    .skill {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Display projects in a single column */
+    }
+
+    .project-card {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    /* Contact Section */
+    .contact-grid {
+        flex-direction: column; /* Stack contact items vertically */
+        gap: 1.5em; /* Add spacing between items */
+    }
+
+    .contact-item {
+        width: 100%; /* Make contact items take full width */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1em; /* Adjust footer font size */
+    }
+}
+    
+    body {
+    font-family: Times New Roman, Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #090433; /* White background for hero */
+    color: #f9f9f9; /* Dark text */
+    text-align: center;
+    padding: 3em 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero h1 {
+    font-family: Times New Roman, Times, serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero h1 span {
+    color: #6C5CE7; /* Purple highlight */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+    color: #f9f9f9; /* Softer dark text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* White navbar */
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navbar a {
+    font-family: Times New Roman, Times, serif;
+    color: #333; /* Dark text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #6C5CE7; /* Purple hover effect */
+}
+
+/* Section */
+.section {
+    padding: 3em 0;
+    background-color: #ffffff; /* White section background */
+    margin-bottom: 1em;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about h2 {
+    font-family: Times New Roman, Times, serif;
+    text-align: center;
+    color: #6C5CE7; /* Purple */
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+}
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    gap: 2em; /* Space between items */
+    text-align: left; /* Align text to the left */
+}
+
+.about-text {
+    flex: 1 1 70%; /* Allow text to take up 60% of the width */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: #555; /* Softer dark text */
+}
+ 
+.about-image {
+    flex: 1 1 10%; /* Allow image to take up 30% of the width */
+    text-align: center; /* Center the image */
+}
+
+.about-image img {
+    width: 300px;
+    height:300px; /* Ensure the image scales properly */
+    border-radius: 50%; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s;
+    object-fit:cover;
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+    
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #090433; /* Purple background */
+    color: #ffffff; /* White text */
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: Times New Roman, Times, serif;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #FDCB6E; /* Yellow hover effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Skills Section */
+.skills h2 {
+    font-family: Times New Roman, Times, serif;
+    text-align: center;
+    color: #6C5CE7; /* Purple */
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5em;
+    justify-items: center;
+}
+
+.skill {
+    background-color: #f0f0f0; /* Light gray card background */
+    color: #333; /* Dark text */
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.skill i {
+    font-size: 2.5em;
+    color: #6C5CE7; /* Purple for icons */
+    margin-bottom: 0.5em;
+}
+
+.skill h3 {
+    font-family: Times New Roman, Times, serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Projects Section */
+.projects h2 {
+    font-family: Times New Roman, Times, serif;
+    text-align: center;
+    color: #6C5CE7; /* Purple */
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.project-card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s, box-shadow -3.5s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+    transition: transform 0.3s;
+}
+
+.project-card img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.project-card h3 {
+    font-family:Times New Roman, Times, serif;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.project-card p {
+    font-family: Times New Roman, Times, serif;
+    font-size: 1.2em;
+    color: #555; /* Softer dark text */
+    margin-bottom: 1em;
+}
+
+.project-card .button {
+    background-color: #090433; /* Purple */
+    color: #ffffff; /* White text */
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-card .button:hover {
+    background-color:#6C5CE7; /* Yellow hover effect */
+    transform: scale(1.05);
+}
+
+    
+    /* Contact Section */
+.contact {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 3em 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact h2 {
+    font-family: Times New Roman, Times, serif;
+    font-size: 2em;
+    color: #6C5CE7; /* Purple */
+    margin-bottom: 1em;
+}
+
+.contact p {
+    font-family: Times New Roman, Times, serif;
+    font-size: 1.3em;
+    color: #555; /* Softer dark text */
+    margin-bottom: 2em;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center;
+    gap: 2em; /* Space between items */
+}
+
+.contact-item {
+    background-color: #ffffff; /* White card background */
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 250px; /* Fixed width for consistency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Subtle hover lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.contact-item i {
+    font-size: 2em;
+    color: #6C5CE7; /* Purple for icons */
+    margin-bottom: 0.5em;
+}
+
+.contact-item h3 {
+    font-family: Times New Roman, Times, serif;
+    font-size: 1.5em;
+    color: #333; /* Dark text */
+    margin-bottom: 0.5em;
+}
+
+.contact-item p {
+    font-family:Times New Roman, Times, serif;
+    font-size: 1.2em;
+    color: #555; /* Softer dark text */
+}
+
+.contact-item a {
+    color: #6C5CE7; /* Purple for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #FDCB6E; /* Yellow hover effect */
+}
+/* Footer */
+footer {
+    background-color: #090433; /* White footer background */
+   
+    color: #f9f9f9; /* Softer dark text */
+    text-align: center;
+    padding: 1.1em ;
+    font-size: 1.4em;
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+}
